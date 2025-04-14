@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Event Theme Generator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles/style.css" />
+  <style>
+    /* Custom styles for Event Theme Generator page */
+    .container {
+      margin-top: 50px;
+    }
+
+    .theme-card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      background-color: #f8f9fa;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-back {
+      background-color: #8c3a3a;
+      color: white;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .btn-back:hover {
+      background-color: #5a2c2c;
+    }
+
+    h1 {
+      color: #8c3a3a;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ella Kate Events</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="resume.html">Résumé</a></li>
+            <li class="nav-item"><a class="nav-link" href="event.html">Theme Generator</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Event Theme Generator Content -->
+  <div class="container">
+    <h1>Event Theme Generator</h1>
+    <div class="theme-card">
+      <h3>Event Theme: <span id="theme-name">Tropical Luau</span></h3>
+      <p>Theme Description: A fun, vibrant party with tropical decorations and delicious island-inspired food.</p>
+    </div>
+
+    <div class="text-center mt-4">
+        <button id="generate-theme-btn" class="btn btn-light generate-button">Generate New Theme</button>
+        <a href="index.html" class="btn btn-light back-home-button">Go Back Home</a>
+    </div>
+
+  <!-- JavaScript for Theme Generation -->
+  <script>
+    const themes = [
+      { name: "Tropical Luau", description: "A fun, vibrant party with tropical decorations and delicious island-inspired food." },
+      { name: "Vintage Garden Party", description: "Elegant outdoor gathering with floral decorations, vintage crockery, and delicate tea." },
+      { name: "Casino Night", description: "Glamorous event with casino tables, cocktails, and a thrilling atmosphere." },
+      { name: "Boho Picnic", description: "Casual and laid-back with bohemian style decor and cozy blankets for a relaxed event." },
+      { name: "Masquerade Ball", description: "Mystical and elegant, with guests wearing masks and dancing the night away." }
+    ];
+
+    const button = document.getElementById('generate-theme-btn');
+    const themeNameElement = document.getElementById('theme-name');
+    const themeDescriptionElement = document.querySelector('.theme-card p');
+
+    button.addEventListener('click', () => {
+      const randomIndex = Math.floor(Math.random() * themes.length);
+      themeNameElement.textContent = themes[randomIndex].name;
+      themeDescriptionElement.textContent = themes[randomIndex].description;
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

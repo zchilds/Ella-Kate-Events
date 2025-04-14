@@ -1,0 +1,280 @@
+/* This is my custom stylesheet with font color, font family, and 3 styled divs */
+
+
+body {
+    background: linear-gradient(to right, #f0f8ff, #cce7ff); /* Light blue to periwinkle gradient */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #b0cfee !important; /* Light periwinkle */
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d5e5f9 !important; /* Lighter blue hover effect */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e6f5ff; /* Very light blue */
+    padding: 60px 0;
+    text-align: center;
+    color: #3e3e3e;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+.btn-light {
+    background-color: #aad8e6; /* Light periwinkle */
+    border: none;
+    color: #333;
+}
+
+.btn-light:hover {
+    background-color: #88c2e3;
+    color: white;
+}
+
+/* About Section */
+.about-section {
+    background-image: url('../Images/birthday.jpg'); /* Replace with the correct URL or file path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 80px 20px;
+    position: relative;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+    z-index: 0;
+}
+
+.about-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.about-section .lead {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Services Section */
+#services {
+    background-color: #f2faff; /* Very light blue */
+    padding: 50px 0;
+}
+
+#services h2 {
+    color: #5a2c2c;
+}
+
+.custom-service-box {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.custom-service-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.custom-service-box h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #3e3e3e;
+}
+
+.custom-service-box p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Video and Tableau Sections */
+#video-section,
+#tableau-section {
+    background-color: #e6f5ff; /* Light blue */
+    padding: 50px 0;
+}
+
+#video-section h2,
+#tableau-section h2 {
+    color: #4a4a4a;
+}
+
+/* Resume Section */
+.resume-section {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #8c3a3a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-item {
+    margin-bottom: 30px; /* Increased for better spacing */
+    text-align: center;
+}
+
+.resume-item h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #5a2c2c;
+}
+
+.resume-item p {
+    color: #555;
+}
+
+/* New Styles for Skills List */
+.resume ul {
+    padding-left: 2rem; /* Proper indentation */
+    text-align: left;   /* Better readability */
+    max-width: 600px;   /* Keeps it from stretching too wide */
+    margin: 0 auto 1rem auto; /* Center the list and space below */
+}
+
+.resume li {
+    margin-bottom: 8px;
+}
+
+
+
+.img-fluid {
+    width: 250px; /* Set width to a fixed value */
+    height: 250px; /* Set height to a fixed value */
+    object-fit: cover; /* Ensure the image fills the space without distortion */
+    border-radius: 10px; /* Optional: for rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for effect */
+}
+.generate-button,
+.back-home-button {
+    width: 220px;
+    height: 60px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    color: #333;
+    background-color: #aad8e6; /* Matches your theme */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.generate-button:hover,
+.back-home-button:hover {
+    background-color: #88c2e3;
+    color: white;
+}
+
+
+footer {
+    background-color: #88c2e3; /* Deep periwinkle-red tone */
+    color: #ffffff;
+    padding: 30px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 5px solid #aad8e6; /* Accent line in light blue */
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left h5 {
+    margin: 0 0 5px;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .footer-left p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-right a {
+    color: #f0f8ff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  .footer-right a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  .shorts-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    padding-top: 177.78%; /* 16:9 is 56.25%, 9:16 is 177.78% */
+  }
+  
+  .shorts-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .tableauWrapper {
+    display: flex;
+    justify-content: center;  /* Horizontally centers the graph */
+    align-items: center;      /* Vertically centers the graph */
+    margin: 0 auto;           /* Ensures the container is centered within the page */
+  }
