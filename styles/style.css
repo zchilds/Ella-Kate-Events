@@ -2,7 +2,7 @@
 
 
 body {
-    background: linear-gradient(to right, #f0f8ff, #cce7ff); /* Light blue to periwinkle gradient */
+    background: linear-gradient(to right, #f0f8ff, #cce7ff); 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     margin: 0;
@@ -15,7 +15,7 @@ a {
 
 /* Navbar */
 .navbar {
-    background-color: #b0cfee !important; /* Light periwinkle */
+    background-color: #b0cfee !important; 
 }
 
 .navbar-brand {
@@ -28,12 +28,12 @@ a {
 }
 
 .navbar-nav .nav-link:hover {
-    color: #d5e5f9 !important; /* Lighter blue hover effect */
+    color: #d5e5f9 !important; 
 }
 
 /* Hero Section */
 .hero {
-    background-color: #e6f5ff; /* Very light blue */
+    background-color: #e6f5ff; 
     padding: 60px 0;
     text-align: center;
     color: #3e3e3e;
@@ -50,7 +50,7 @@ a {
 }
 
 .btn-light {
-    background-color: #aad8e6; /* Light periwinkle */
+    background-color: #aad8e6; 
     border: none;
     color: #333;
 }
@@ -62,7 +62,7 @@ a {
 
 /* About Section */
 .about-section {
-    background-image: url('../Images/birthday.jpg'); /* Replace with the correct URL or file path */
+    background-image: url('../Images/birthday.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -75,7 +75,7 @@ a {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text contrast */
+    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 0;
 }
 
@@ -91,7 +91,7 @@ a {
 
 /* Services Section */
 #services {
-    background-color: #f2faff; /* Very light blue */
+    background-color: #f2faff; 
     padding: 50px 0;
 }
 
@@ -125,7 +125,7 @@ a {
 /* Video and Tableau Sections */
 #video-section,
 #tableau-section {
-    background-color: #e6f5ff; /* Light blue */
+    background-color: #e6f5ff; 
     padding: 50px 0;
 }
 
@@ -149,7 +149,7 @@ a {
 }
 
 .resume-item {
-    margin-bottom: 30px; /* Increased for better spacing */
+    margin-bottom: 30px; 
     text-align: center;
 }
 
@@ -164,12 +164,12 @@ a {
     color: #555;
 }
 
-/* New Styles for Skills List */
+
 .resume ul {
-    padding-left: 2rem; /* Proper indentation */
-    text-align: left;   /* Better readability */
-    max-width: 600px;   /* Keeps it from stretching too wide */
-    margin: 0 auto 1rem auto; /* Center the list and space below */
+    padding-left: 2rem; 
+    text-align: left;   
+    max-width: 600px;   
+    margin: 0 auto 1rem auto; 
 }
 
 .resume li {
@@ -179,11 +179,11 @@ a {
 
 
 .img-fluid {
-    width: 250px; /* Set width to a fixed value */
-    height: 250px; /* Set height to a fixed value */
-    object-fit: cover; /* Ensure the image fills the space without distortion */
-    border-radius: 10px; /* Optional: for rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for effect */
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 .generate-button,
 .back-home-button {
@@ -194,7 +194,7 @@ a {
     border: none;
     border-radius: 10px;
     color: #333;
-    background-color: #aad8e6; /* Matches your theme */
+    background-color: #aad8e6; 
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -210,11 +210,11 @@ a {
 
 
 footer {
-    background-color: #88c2e3; /* Deep periwinkle-red tone */
+    background-color: #88c2e3; 
     color: #ffffff;
     padding: 30px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-top: 5px solid #aad8e6; /* Accent line in light blue */
+    border-top: 5px solid #aad8e6; 
   }
   
   .footer-container {
@@ -261,7 +261,7 @@ footer {
     width: 100%;
     max-width: 360px;
     margin: 0 auto;
-    padding-top: 177.78%; /* 16:9 is 56.25%, 9:16 is 177.78% */
+    padding-top: 177.78%; 
   }
   
   .shorts-wrapper iframe {
@@ -274,7 +274,7 @@ footer {
   }
   .tableauWrapper {
     display: flex;
-    justify-content: center;  /* Horizontally centers the graph */
-    align-items: center;      /* Vertically centers the graph */
-    margin: 0 auto;           /* Ensures the container is centered within the page */
+    justify-content: center;  
+    align-items: center;      
+    margin: 0 auto;           
   }
